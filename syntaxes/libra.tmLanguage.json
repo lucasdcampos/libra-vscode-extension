@@ -1,0 +1,131 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Libra",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#symbols"
+		},
+		{
+			"include": "#functions"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.libra",
+					"begin": "//",
+					"end": "$",
+					"patterns": [
+						{
+							"name": "comment.line.documentation.libra",
+							"match": "\\bTODO\\b|\\bFIXME\\b"
+						}
+					]
+				},
+				{
+					"name": "comment.block.libra",
+					"begin": "/\\*",
+					"end": "\\*/",
+					"patterns": [
+						{
+							"name": "comment.block.documentation.libra",
+							"match": "\\bTODO\\b|\\bFIXME\\b"
+						}
+					]
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.libra",
+					"match": "\\b(se|senao|entao|enquanto|faca|romper|retornar|fim|importar)\\b"
+				},
+				{
+					"name": "storage.type.libra",
+					"match": "\\b(var|const|funcao)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.libra",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.libra",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"name": "constant.numeric.libra",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.arithmetic.libra",
+					"match": "\\+|\\-|\\*|\\/|\\^|%"
+				},
+				{
+					"name": "keyword.operator.comparison.libra",
+					"match": "==|!=|>|<|>=|<="
+				},
+				{
+					"name": "keyword.operator.logical.libra",
+					"match": "\\b(e|ou|ouexclusivo|nao)\\b"
+				},
+				{
+					"name": "keyword.operator.assignment.libra",
+					"match": "="
+				}
+			]
+		},
+		"symbols": {
+			"patterns": [
+				{
+					"name": "punctuation.bracket.round.libra",
+					"match": "\\(|\\)"
+				},
+				{
+					"name": "punctuation.bracket.square.libra",
+					"match": "\\[|\\]"
+				},
+				{
+					"name": "punctuation.bracket.curly.libra",
+					"match": "\\{|\\}"
+				},
+				{
+					"name": "punctuation.separator.libra",
+					"match": ";|,"
+				}
+			]
+		},
+		"functions": {
+			"patterns": [
+				{
+					"name": "entity.name.function.libra",
+					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)(?=\\()"
+				}
+			]
+		}
+	},
+	"scopeName": "source.libra"
+}

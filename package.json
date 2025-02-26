@@ -1,0 +1,25 @@
+{
+  "name": "libra",
+  "displayName": "Libra",
+  "description": "Syntax Highligth para Libra",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "libra",
+      "aliases": ["Libra", "libra"],
+      "extensions": [".libra",".lb"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "libra",
+      "scopeName": "source.libra",
+      "path": "./syntaxes/libra.tmLanguage.json"
+    }]
+  }
+}
