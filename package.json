@@ -1,7 +1,7 @@
 {
   "name": "libra",
   "displayName": "Libra",
-  "description": "Syntax Highligth para Libra",
+  "description": "Syntax Highlighting para Libra",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
