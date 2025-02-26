@@ -1,8 +1,9 @@
 {
   "name": "libra",
   "displayName": "Libra",
-  "description": "Syntax Highlighting para Libra",
-  "version": "0.0.1",
+  "description": "Suporte base da linguagem Libra.",
+  "version": "0.0.2",
+  "publisher": "LucasMCampos",
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -10,16 +11,37 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "libra",
-      "aliases": ["Libra", "libra"],
-      "extensions": [".libra",".lb"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "libra",
-      "scopeName": "source.libra",
-      "path": "./syntaxes/libra.tmLanguage.json"
-    }]
-  }
+    "languages": [
+      {
+        "id": "libra",
+        "aliases": ["Libra", "libra"],
+        "extensions": [".libra", ".lb"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "libra",
+        "scopeName": "source.libra",
+        "path": "./syntaxes/libra.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LucasMCampos/libra-language-vscode"
+  },
+  "keywords": [
+    "libra",
+    "syntax highlighting",
+    "vscode",
+    "language"
+  ],
+  "author": "Lucas M Campos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucasMCampos/libra-language-vscode/issues"
+  },
+  "homepage": "https://github.com/LucasMCampos/libra-language-vscode",
+  "icon": "assets/icon.png"
 }
