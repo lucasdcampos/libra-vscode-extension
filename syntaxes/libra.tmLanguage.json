@@ -55,11 +55,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.libra",
-					"match": "\\b(se|senao|entao|enquanto|faca|romper|continuar|retornar|fim|importar|Objeto|Int|Real|Texto|Vetor)\\b"
+					"match": "\\b(se|senao|entao|enquanto|faca|funcao|tipo|romper|continuar|retornar|fim|importar|Objeto|Int|Real|Texto|Vetor)\\b"
 				},
 				{
 					"name": "storage.type.libra",
-					"match": "\\b(var|const|funcao|tipo)\\b"
+					"match": "\\b(var|const)\\b"
 				}
 			]
 		},
@@ -123,6 +123,10 @@
 				{
 					"name": "punctuation.doubledot.libra",
 					"match": ":"
+				},
+				{
+					"name": "punctuation.arrow.libra",
+					"match": "->"
 				}
 			]
 		},

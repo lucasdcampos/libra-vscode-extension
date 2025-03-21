@@ -2,7 +2,7 @@
   "name": "libra",
   "displayName": "Libra",
   "description": "Suporte base da linguagem Libra.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "LucasMCampos",
   "engines": {
     "vscode": "^1.97.0"
@@ -15,8 +15,7 @@
       {
         "id": "libra",
         "aliases": ["Libra", "libra"],
-        "extensions": [".libra", ".lb"],
-        "configuration": "./language-configuration.json"
+        "extensions": [".libra", ".lb"]
       }
     ],
     "grammars": [
