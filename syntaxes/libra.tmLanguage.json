@@ -55,11 +55,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.libra",
-					"match": "\\b(se|senao|entao|enquanto|faca|romper|retornar|fim|importar)\\b"
+					"match": "\\b(se|senao|entao|enquanto|faca|romper|continuar|retornar|fim|importar|Objeto|Int|Real|Texto|Vetor)\\b"
 				},
 				{
 					"name": "storage.type.libra",
-					"match": "\\b(var|const|funcao)\\b"
+					"match": "\\b(var|const|funcao|tipo)\\b"
 				}
 			]
 		},
@@ -95,6 +95,10 @@
 				{
 					"name": "keyword.operator.assignment.libra",
 					"match": "="
+				},
+				{
+					"name": "keyword.operator.memberaccess.libra",
+					"match": "."
 				}
 			]
 		},
@@ -115,6 +119,10 @@
 				{
 					"name": "punctuation.separator.libra",
 					"match": ";|,"
+				},
+				{
+					"name": "punctuation.doubledot.libra",
+					"match": ":"
 				}
 			]
 		},
@@ -122,7 +130,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.function.libra",
-					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)(?=\\()"
+					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\()"
 				}
 			]
 		}
