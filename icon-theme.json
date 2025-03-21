@@ -1,0 +1,14 @@
+{
+    "iconDefinitions": {
+      "libraFile": {
+        "iconPath": "./assets/icon-256.png"
+      }
+    },
+    "fileExtensions": {
+      "libra": "libraFile"
+    },
+    "fileNames": {},
+    "folderNames": {},
+    "folderNamesExpanded": {}
+  }
+  

@@ -2,7 +2,7 @@
   "name": "libra",
   "displayName": "Libra",
   "description": "Suporte base da linguagem Libra.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "LucasMCampos",
   "engines": {
     "vscode": "^1.97.0"
@@ -24,6 +24,13 @@
         "scopeName": "source.libra",
         "path": "./syntaxes/libra.tmLanguage.json"
       }
+    ],
+    "iconThemes": [
+      {
+        "id": "libra-icons",
+        "label": "Libra File Icons",
+        "path": "./icon-theme.json"
+      }
     ]
   },
   "repository": {
@@ -42,5 +49,5 @@
     "url": "https://github.com/LucasMCampos/libra-language-vscode/issues"
   },
   "homepage": "https://github.com/LucasMCampos/libra-language-vscode",
-  "icon": "assets/icon.png"
+  "icon": "assets/logo.png"
 }

@@ -32,6 +32,7 @@ cd libra-language-vscode
 ```
 3. Pressione F5 no Visual Studio Code para abrir uma janela de depuração.
 4. Use o comando "Developer: Reload Window" (pressione Ctrl+Shift+P e procure por este comando) para recarregar o VS Code e ativar a extensão.
+5. Use `vsce package` para compilar a extensão
 
 ## Como Usar
 - Crie um novo arquivo com a extensão .libra.
